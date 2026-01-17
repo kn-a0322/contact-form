@@ -34,13 +34,14 @@
                     <tr class="confirm-table__row">
                         <th class="confirm-table__header">お問い合わせ内容</th>
                         <td class="confirm-table__text">
-                            <input type="text" name="content" value="{{ $contact['content'] }}"readonly />
+                            <input type="text" name="content" value="{{ $contact['content'] }}" readonly />
                         </td>
                     </tr>
                 </table>
             </div>
             <div class="form__button">
-                <button class="form__button-submit" type="submit">送信</button>
+                <button class="form__button-submit" type="submit" name="action" value="submit">送信</button>
+                <button class="form__button-back" type="submit" name="action" value="back">入力内容を修正する</button>
             </div>
         </form>    
     </div>

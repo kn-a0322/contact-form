@@ -29,6 +29,16 @@
     color: #aaa;
 }
 
+.form__required{
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.form__required::before{
+    content: "*";
+    margin-right: 2px;
+}
+
 .form__error{
     height: 20px;
     color: #ff0000;

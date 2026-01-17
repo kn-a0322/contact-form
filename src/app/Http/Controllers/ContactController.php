@@ -21,6 +21,9 @@ class ContactController extends Controller
 
     public function store(ContactRequest $request){//storeメソッドはデータを保存するメソッド
         $contact = $request->only(['name', 'email', 'tel', 'content']);
+        if ($request->input('action') === 'back') {
+            return redirect('/')->withInput($contact);
+        }
         Contact::create($contact);//Contactモデルのcreateメソッドを使用してデータを保存
         return view('thanks');
     }
