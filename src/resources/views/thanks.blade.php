@@ -7,7 +7,7 @@
 @section('content')
     <div class="thanks-form__content">
         <div class="thanks__heading">
-            <h2>お問い合わせありがとうございます</h2>
+            <h2>お問合せいただきありがとうございました</h2>
         </div>
     </div>
 @endsection
